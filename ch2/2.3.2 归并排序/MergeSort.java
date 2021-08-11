@@ -30,7 +30,4 @@ public class MergeSort {
             arr[i] = mergeArr[index++];
         }
     }
-
-
-
 }
