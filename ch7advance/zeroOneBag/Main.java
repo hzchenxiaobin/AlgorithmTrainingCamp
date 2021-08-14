@@ -13,19 +13,28 @@ public class Main {
      * @return 最大价值
      */
     public int solute(int[] v, int[] w, int W) {
-        int[][] dp = new int[v.length][W];
-        int result = 0;
-        for (int i = 0; i < v.length; i++) {
-            for (int j = 0; j <= W; j++) {
+        int n = v.length;
+        int[][] dp = new int[n + 1][W + 1];
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= W; j++) {
                 //不选取当前背包
                 dp[i][j] = dp[i-1][j];
                 if(j >= w[i]) {
                     dp[i][j] = Math.max(dp[i][j], dp[i-1][j - w[i]] + v[i]);
                 }
-                result = Math.max(dp[i][j], result);
             }
         }
 
-        return result;
+        return dp[n][W];
+    }
+
+    /**
+     * 求最优解
+     * @param w 每个物品的重量
+     * @param dp 最优解
+     * @return
+     */
+    public int[] getOptimumSolution(int[] w, int[][] dp) {
+
     }
 }
