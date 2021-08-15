@@ -87,7 +87,7 @@ public class Main {
         int n = v.length;
         int[] dp = new int[W + 1];
         for (int i = 1; i <= n; i++) {
-            for (int j = W; j >= w[i]; j++) {
+            for (int j = W; j >= w[i]; j--) {
                 dp[j] = Math.max(dp[j], dp[j - w[i]] + v[i]);
             }
         }
