@@ -1,4 +1,4 @@
-package ch7advance.completeBag;
+package ch7advance.完全背包;
 
 /**
  * 完全背包问题
