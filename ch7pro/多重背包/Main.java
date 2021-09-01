@@ -1,4 +1,4 @@
-package ch7advance.多重背包;
+package ch7pro.多重背包;
 
 public class Main {
     public int solute(int[] v, int[] w, int[] c, int W) {

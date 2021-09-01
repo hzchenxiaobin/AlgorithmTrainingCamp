@@ -1,4 +1,4 @@
-package ch7advance.zeroOneBag;
+package ch7pro.zeroOneBag;
 
 /**
  * 01背包问题

@@ -1,4 +1,4 @@
-package ch7advance.HDU2844;
+package ch7pro.HDU2844;
 
 import java.util.Scanner;
 
