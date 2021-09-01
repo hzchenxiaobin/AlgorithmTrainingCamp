@@ -54,9 +54,6 @@ public class Main {
         }
     }
 
-
-
-
     static class DoubleLinkList {
         int val;
         DoubleLinkList pre;
